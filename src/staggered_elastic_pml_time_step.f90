@@ -1,5 +1,24 @@
 module staggered_elastic_pml_time_step
 
+!            
+!
+!            +-------------------+
+!            |                   |
+!            |                   |
+!            |                   |
+!            |                   |
+!            |        sigma_xz   |
+!       v_z  +---------+         |
+!            |         |         |
+!            |         |         |
+!            |         |         |
+!            |         |         |
+!            |         |         |
+!            +---------+---------+  ---> x
+!         sigma_xx    v_x
+!         sigma_zz
+!
+
  use global
  use datatype
  use math
