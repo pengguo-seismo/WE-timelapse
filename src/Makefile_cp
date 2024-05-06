@@ -1,0 +1,65 @@
+
+include ./Makefile.config
+
+# level-1 modules: self-contained
+# --level-2 modules: use level-1 modules and are used by level-3 modules
+#   --level-3 modules: use both level-1 and level-2 modules
+#
+OBJS = $(DIR_OBJ)/global.o    \
+       $(DIR_OBJ)/parser.o    \
+       $(DIR_OBJ)/datatype.o    \
+       $(DIR_OBJ)/mmi_mpi.o   \
+       $(DIR_OBJ)/modeling.o  \
+       $(DIR_OBJ)/record_wave_boundary_uw.o  \
+       $(DIR_OBJ)/string.o    \
+       $(DIR_OBJ)/su.o        \
+       $(DIR_OBJ)/math.o      \
+       $(DIR_OBJ)/crosco.o      \
+       $(DIR_OBJ)/free_surface.o      \
+       $(DIR_OBJ)/io.o        \
+       $(DIR_OBJ)/smooth_slow.o  \
+       $(DIR_OBJ)/phase.o \
+       $(DIR_OBJ)/pml.o       \
+       $(DIR_OBJ)/source.o    \
+       $(DIR_OBJ)/envelope.o \
+       $(DIR_OBJ)/xcorr_calc_functions.o \
+       $(DIR_OBJ)/lsm_utilities.o \
+       $(DIR_OBJ)/a2d_staggered_fwi.o  \
+       $(DIR_OBJ)/a2d_staggered_elastic.o \
+       $(DIR_OBJ)/apps2d_elastic_modeling.o \
+       $(DIR_OBJ)/apps2d_staggered_fwi.o  \
+       $(DIR_OBJ)/lsm_utilities_fwi.o \
+       $(DIR_OBJ)/lsm_utilities_elastic.o \
+       $(DIR_OBJ)/apps2d_fwi_staggered.o \
+       $(DIR_OBJ)/apps2d_fwi_elastic_staggered.o \
+       $(DIR_OBJ)/apps2d_modeling_tmp.o 
+
+all: dir mmi
+
+dir:
+	@-test -d $(DIR_MOD) || mkdir $(DIR_MOD)
+	@-test -d $(DIR_OBJ) || mkdir $(DIR_OBJ)
+	@-test -d $(DIR_EXE) || mkdir $(DIR_EXE)
+
+mmi: $(OBJS) $(DIR_OBJ)/mmi.o
+	$(FCC) -o $@ $^ $(LDFLAGS)
+	mv $@ $(DIR_EXE)
+
+bin2su.x: $(OBJS) $(DIR_OBJ)/bin2su.o
+	$(FCC) -o $@ $^ $(LDFLAGS)
+	mv $@ $(DIR_EXE)
+
+$(DIR_OBJ)/%.o: %.c
+	$(CC) -o $@ $< $(CCFLAGS)
+
+$(DIR_OBJ)/%.o: %.f90
+	$(FCC) -o $@ $< $(F90FLAGS)
+
+clean:
+	rm -f $(DIR_EXE)/* $(DIR_OBJ)/*.o* $(DIR_MOD)/*.mod;
+
+
+
+       ##$(DIR_OBJ)/m_fft_utils.o    \
+       ##$(DIR_OBJ)/fft.o    \
+

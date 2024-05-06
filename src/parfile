@@ -1,0 +1,40 @@
+## Job name
+jobtype=elastic_modeling
+
+VPFILE=./Models/Gorgon_4244/vp_50_501_25m.bin
+VSFILE=./Models/Gorgon_4244/vs_50_501_25m.bin
+COORD_FILE=./Models/Gorgon_4244/coord_gorgon4244.dat
+CSG_IN=./Models/Gorgon_4244/Line4244/csg4244_interp_
+
+## Model parameters
+NZ=50
+NX=501
+DX=25.0
+NPML=50
+
+FREESURFACE=1
+##
+TIME_OPTION=1
+
+## Time samples and time intervals
+NT_WORK=24000
+DT_WORK=0.0025
+
+## Central frequency of the source
+FREQUENCY=0.6
+IMAGE_CONDITION=0
+SKIPSHOT=0
+
+## Iteration number
+ITERMAX=10
+MUTE_DIRECT=0
+
+## The path of inverted model and gradients
+MIG_FILE=./q_lsrtm/WD_gorgon_
+GRAD_FILE=./gradients/grad_gorgon_
+## The path of outputed log 
+LOGFILE=./logs/log_gorgon_
+
+#FIRST_SHOT=1
+#LAST_SHOT=24
+

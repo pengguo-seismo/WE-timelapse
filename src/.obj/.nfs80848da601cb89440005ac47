@@ -1,0 +1,897 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: PHASE::INTERP1
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at phase.f90(35,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Peeled loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Remainder loop for vectorization, Multiversioned v1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Remainder loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PHASE::INTERP1 [haswell]
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at phase.f90(35,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Peeled loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Remainder loop for vectorization, Multiversioned v1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Remainder loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PHASE::INTERP1 [generic]
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at phase.f90(35,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(37,6)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(37,6)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(40,14)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PHASE::RADON_TRANSFORM
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at phase.f90(101,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(103,4)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(103,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(103,4)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Peeled loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Peeled loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Peeled loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(114,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(114,4)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(130,1)
+<Multiversioned v1>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(130,1)
+<Multiversioned v2>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(137,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(138,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(138,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(138,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(143,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(143,1)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at phase.f90(143,1)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at phase.f90(143,1)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at phase.f90(145,1)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at phase.f90(144,1)
+                  remark #15301: PERMUTED LOOP WAS VECTORIZED
+               LOOP END
+
+               LOOP BEGIN at phase.f90(144,1)
+               <Remainder loop for vectorization>
+               LOOP END
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at phase.f90(143,1)
+         <Remainder>
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at phase.f90(145,1)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at phase.f90(144,1)
+                  remark #15301: PERMUTED LOOP WAS VECTORIZED
+               LOOP END
+
+               LOOP BEGIN at phase.f90(144,1)
+               <Remainder loop for vectorization>
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(152,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(153,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(153,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(153,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(153,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(177,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(177,1)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at phase.f90(177,1)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(177,1)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(178,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(35,3) inlined into phase.f90(186,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(186,1)
+<Multiversioned v1>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(187,1)
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(187,1)
+LOOP END
+
+LOOP BEGIN at phase.f90(186,1)
+<Multiversioned v2>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: PHASE::RADON_TRANSFORM [haswell]
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at phase.f90(101,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(103,4)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(103,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(103,4)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Peeled loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Peeled loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Peeled loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Multiversioned v2>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(104,4)
+   <Remainder loop for vectorization, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(114,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(114,4)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(130,1)
+<Multiversioned v1>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(130,1)
+<Multiversioned v2>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(131,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(137,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(138,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(138,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(138,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(143,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(143,1)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at phase.f90(143,1)
+         remark #15542: loop was not vectorized: inner loop was already vectorized
+
+         LOOP BEGIN at phase.f90(143,1)
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at phase.f90(145,1)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at phase.f90(144,1)
+                  remark #15301: PERMUTED LOOP WAS VECTORIZED
+               LOOP END
+
+               LOOP BEGIN at phase.f90(144,1)
+               <Remainder loop for vectorization>
+               LOOP END
+            LOOP END
+         LOOP END
+
+         LOOP BEGIN at phase.f90(143,1)
+         <Remainder>
+            remark #15542: loop was not vectorized: inner loop was already vectorized
+
+            LOOP BEGIN at phase.f90(145,1)
+               remark #15542: loop was not vectorized: inner loop was already vectorized
+
+               LOOP BEGIN at phase.f90(144,1)
+                  remark #15301: PERMUTED LOOP WAS VECTORIZED
+               LOOP END
+
+               LOOP BEGIN at phase.f90(144,1)
+               <Remainder loop for vectorization>
+               LOOP END
+            LOOP END
+         LOOP END
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(152,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(153,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(153,1)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(153,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(153,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(163,1)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at phase.f90(169,1)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at phase.f90(177,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(177,1)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at phase.f90(177,1)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(177,1)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(178,1)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(35,3) inlined into phase.f90(186,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(37,6) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at phase.f90(40,14) inlined into phase.f90(186,9)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(180,12)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(181,4)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(186,1)
+<Multiversioned v1>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(187,1)
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at phase.f90(187,1)
+LOOP END
+
+LOOP BEGIN at phase.f90(186,1)
+<Multiversioned v2>
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at phase.f90(186,1)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END

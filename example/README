@@ -1,0 +1,14 @@
+Note that this syntheic example was particularly designed for testing the error tolerance 
+for elastic-wave-equation based time-lapse inversion. 
+
+1. true baseline model: model1 
+2. true time-lapse model: model1 + model perturturbation (1%)
+3. input baseline model for time-lapse inversion: model 2 (the difference with model 1 is about 6% - 12%).
+
+We don't use model 1 as the input baseline model for time-lapse inversion, because in the real world, no one knows 
+exactly the true baseline model. In many cases, the model errors in the known baseline model is larger than the 
+subsurface physical properties. 
+
+
+
+

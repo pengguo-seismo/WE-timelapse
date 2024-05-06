@@ -1,0 +1,70 @@
+## Job name
+jobtype=elastic_fwi
+
+#VPFILE=/scratch2/guo103/wd_lab/sensi_syn_a/Gorgon_syn_model_a/vp_3924.bin
+#VSFILE=/scratch2/guo103/wd_lab/sensi_syn_a/Gorgon_syn_model_a/vs_3924.bin
+VPFILE=./model2/vp_3924.bin
+VSFILE=./model2/vs_3924.bin
+#VPFILE=/scratch2/guo103/wd_lab/Gorgon_inv_results/vp_3924.bin
+#VSFILE=/scratch2/guo103/wd_lab/Gorgon_inv_results/vs_3924.bin
+COORD_FILE=./geom/coord_gorgon3924_3200.dat
+CSG_IN=./data_baseline/
+CSG_T1_IN=./data_timelapse/
+CSG_SYN_T0_IN=./syn/
+CSG_OUT=./fwi_ob5_tlapse_adj0_cg/
+
+SOURCEFILE=./wavelet.txt
+
+TIME_LAPSE=1
+
+ADJ_LAGRAN=0
+
+## Model parameters
+NZ=50
+NX=471
+DX=25.0
+NPML=50
+
+NLCG=1
+
+FREESURFACE=0
+##
+TIME_OPTION=1
+
+OBTYPE=5
+
+NLEN_SHIFT=50
+
+## Time samples and time intervals
+NT_WORK=12000
+DT_WORK=0.0025
+
+NT_SHIFT=520
+
+## Central frequency of the source
+FREQUENCY=0.6
+IMAGE_CONDITION=0
+SKIPSHOT=0
+
+###
+COND_WB=1
+WB_DEPTH_FILE=./geom/wb.dat
+
+SMOOTH_TYPE=1
+HORSMT=6
+VERSMT=3
+
+## Iteration number
+ITERMAX=50
+MUTE_DIRECT=0
+
+## The path of inverted model and gradients
+MIG_FILE=./fwi_models_ob5_tlapse_adj0_cg/FWI_gorgon_
+GRAD_FILE=./gradients_ob5_tlapse_adj0_cg/grad_gorgon_
+## The path of outputed log 
+LOGFILE=./logs_ob5_tlapse_adj0_cg/log_gorgon_
+
+FIRST_SHOT=1
+LAST_SHOT=32
+#LAST_SHOT=1
+
