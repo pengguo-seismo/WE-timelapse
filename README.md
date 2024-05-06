@@ -3,7 +3,7 @@ wave-equation based time-lapse inversion
 
 Peng Guo
 
-CSIRO, Australia' national science agency
+CSIRO, Australia's national science agency
 
 Kensington, WA 6151, Australia
 
