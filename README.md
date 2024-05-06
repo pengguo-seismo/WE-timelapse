@@ -1,5 +1,5 @@
 # WE-timelapse
-wave-equation based time-lapse inversion
+Elastic-wave-equation based time-lapse inversion
 
 Peng Guo
 
