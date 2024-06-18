@@ -1,4 +1,5 @@
-! CSIRO
+! Peng 
+! peng.guo@csiro.au
 
 program main
 
